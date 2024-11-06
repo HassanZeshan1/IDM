@@ -1,0 +1,505 @@
+
+/* nav */
+ nav{
+  background-color: #fff;
+      padding: 0.2rem ;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset,
+              rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset,
+              rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset,
+             rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset,
+             rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset,
+             rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset, ;
+  }
+  
+      
+  
+  
+  nav ul{
+      list-style: none;
+      display: flex;
+      justify-content:space-between ;
+  
+  }
+  nav ul li {
+      display: inline;
+      border-radius: 0.5rem;
+  margin-top: 20PX;
+  }
+  nav ul li a {
+      color: #000000;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  padding: 0.1rem 0.2rem;    
+  display: block;
+  }
+ 
+  .idm{
+    position: absolute;
+    margin-left: 90px;
+    font-size: 55px;
+    display: inline;
+    margin: top 22px;
+  }
+  
+  nav ul li a:hover{
+      text-shadow: 0px 0px 10px blueviolet,
+                   0px 0px 20px blueviolet,
+                   0px 0px 40px blueviolet,
+                   0px 0px 80px blueviolet;
+  border-radius: 20px;
+  transition: 0.7s;
+  background-color: transparent;
+  border-bottom: 4px pink groove;
+  }
+  nav ul img{
+      border-radius: 40px;
+  }
+  
+form {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+background: url(../img/DALL·E\ 2024-11-05\ 14.14.19\ -\ A\ construction\ truck\ lifting\ a\ concrete\ slab\ with\ a\ light\ background.\ The\ truck\ has\ a\ crane\ arm\ similar\ to\ the\ previous\ image\,\ appearing\ sturdy\ and\ in.webp) ;
+background-size: cover;
+  
+}
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  /* mm */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+    --color-primary: #1743e3;
+    --color-white: #eaeaea; 
+    --color-dark: #333; 
+    --color-black: #222; 
+}
+.container{
+    max-width: 1620px;
+    width: 90%;
+    margin: 0 auto;
+}
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  width: 50%;
+  padding: 20px;
+}
+
+.header-right {
+  width: 50%;
+  padding: 20px;
+}
+/* .......................Start Header Section...................... */
+header{
+    width: 100;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-left{
+    max-width: 620px;
+    position: relative; 
+    width: 50%;
+    padding: 20px;
+  
+  }
+.header-left h1{
+    font-size: 54px;
+    line-height: 1.2;
+    color: var(--color-black);
+    animation: H1Ani forwards 1s ease;  
+    opacity: 0;    
+    animation-delay: 1s;  
+}
+.header-left h3{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin-top: .5rem;
+    animation: H1Ani forwards 1s ease;  
+    opacity: 0;    
+    animation-delay: .8s;  
+}
+.header-left p{
+    margin: 15px 0 30px;
+    line-height: 150%;
+    font-size: 16px;
+    animation: logoAni forwards 1s ease;  
+    opacity: 0;    
+    animation-delay: .6s; 
+}
+.header-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center; 
+    height: 100%; 
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+.header-right{
+     position: relative;
+    width: 450px;
+     height: 450px;
+    transform: rotate(45deg);
+    right: -7%;    
+    width: 50%;
+    padding: 20px;
+  
+  }
+.sq-box{
+    height: 100%;
+    width: 100%;
+    border: 25px solid var(--color-primary);
+    background: var(--color-white);
+    box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.2) ;
+    opacity: 0;
+    animation: zoomOut 1s ease forwards; 
+    animation-delay: 1.3s;
+}
+.sq-box img{
+    position: absolute;
+    transform: rotate(-45deg);
+    max-width: 700px;
+    top: 50px;
+    left: -130px;
+    opacity: 0;
+    animation: carAni forwards 1s ease;
+    animation-delay: 1.6s;
+}
+.sq-box2{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: var(--color-primary);
+    transform: rotate(45deg);
+    top: -26%;
+    right: -20%;
+    z-index: -1;
+    opacity: 0;
+    animation: sqbox2Ani forwards 1s ease;
+    animation-delay: 0.3s;
+}
+/* .......................End Header Section...................... */
+
+
+
+/* .......................Animation Start...................... */
+@keyframes logoAni {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }    
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }    
+}
+@keyframes NavliaAni {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }    
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }    
+}
+@keyframes socialAni {
+    0%{
+        transform: translateX(100px) rotate(45deg);
+        opacity: 0;
+    }    
+    100%{
+        transform: translateX(0) rotate(45deg);
+        opacity: 1;
+    }    
+}
+@keyframes H1Ani {
+    0%{
+        transform: translateY(-100px) ;
+        opacity: 0;
+    }    
+    100%{
+        transform: translateY(0) ;
+        opacity: 1;
+    }    
+}
+@keyframes zoomOut {
+    0%{
+        transform:scale(1.1) ;
+        opacity: 0;
+    }    
+    100%{
+        transform: scale(1) ;
+        opacity: 1;
+    }    
+}
+@keyframes carAni {
+    0%{
+        transform: translate(180px, -300px) scale(0) rotate(-45deg);
+        opacity: 0;
+    }    
+    100%{
+        transform: translate(0, 0) scale(1) rotate(-45deg);
+        opacity: 1;
+    }    
+}
+@keyframes sqbox2Ani {
+    0%{
+        right: -40%;
+        opacity: 0;
+    }    
+    100%{
+        right: -26%;
+        opacity: 1;
+    }    
+}
+.bttn{
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 15px;
+}
+.bttn::after{
+    content:"" ;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    background-color: #333;
+left: 0;
+top: 0;
+border-radius: 10px;
+}
+.bttn::before{
+    content: "";
+    background: linear-gradient(
+45deg,
+#ff0000,#ff7300,#fffb00,#00ffd5,#002bff,#ff00c8,#ff0000,#48ff00
+
+    );
+    position: absolute;
+    top: -2px;
+left: -2px;
+background-size: 600%;
+z-index: -1;
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+filter: blur(8px);
+animation: wow 10s linear infinite;
+transition:wow .3s ease-in-out;
+border-radius: 12px;
+opacity: 1;
+}
+@keyframes wow {
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 100;}
+}
+
+.bttn:hover::before {
+    opacity: 1;
+
+
+}
+.bttn:active:after{
+background: transparent;
+}
+.bttn:active{
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* /* .......................End Animation......................C */
+
+/* /* .......................footer......................C */
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.pe:hover{
+  color: #30e5c1;
+
+}
+.pe{
+  color: #fff;
+
+}
+
+.he:hover{
+  color: #30e5c1;
+
+}
+
+/* /* .......................end footer......................C */
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .header-left, .header-right {
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+  /* Header Container */
+  .header-container {
+    flex-direction: column;
+  }
+  .header-left, .header-right {
+    width: 100%;
+  }
+  
+  /* Header Left */
+  .header-left {
+    padding: 10px;
+  }
+  .header-left form {
+    padding: 10px;
+  }
+  
+  /* Header Right */
+  .header-right {
+    padding: 10px;
+  }
+  .header-right img {
+    width: 280px;
+    height: 275px;
+  }
+  nav ul li a {
+    font-size:90%;
+    padding: 5px 0px 1px 3px;
+    margin-left: 10px;
+    
+    }
+    nav ul {
+      justify-content:space-between;
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      }
+      nav ul p{
+        font-size: 10px;
+      }
+      .idm{
+        font-size: 28px;
+        margin-top: -7px;
+        margin-left: 175px;
+      }
+      .sq-box2 {
+        width: 245PX;
+        height: 200px;
+        left: 36%;
+        top: 155%;
+        animation-delay: 1.3s;
+
+      }      .pe{
+        color: #fff;
+      }
+      .sq-box {
+      width: 65%;
+      height:65% ;
+      animation-delay: 2.4s;
+
+    }
+      .sq-box img {
+        top:75px ;
+        left:-115px ;
+      }
+form{
+  width: 80%;
+}
+
+.footer {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+}
+
+
